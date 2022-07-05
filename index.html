@@ -391,19 +391,37 @@
           </button>
           <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
           <form class="modal-form">
-            <p class="modal-input-name">Имя</p>
-            <input type="text" name="user-name" class="modal-input" required />
-            <p class="modal-input-name">Телефон</p>
-            <input type="text" name="user-tel" class="modal-input" required />
-            <p class="modal-input-name">Почта</p>
-            <input type="text" name="user-email" class="modal-input" required />
-            <p class="modal-input-name">Комментарий</p>
-            <input
-              type="text"
-              name="user-comment"
-              class="modal-input"
-              placeholder="Введите текст"
-            />
+            <label class="modal-label">
+              Имя
+              <input
+                type="text"
+                name="user-name"
+                class="modal-input"
+                required
+              />
+            </label>
+            <label class="modal-label">
+              Телефон
+              <input type="tel" name="user-tel" class="modal-input" required />
+            </label>
+            <label class="modal-label">
+              Почта
+              <input
+                type="email"
+                name="user-email"
+                class="modal-input"
+                required
+              />
+            </label>
+            <div class="modal-field">
+              <label class="modal-text" for="modal-text">Комментарий </label>
+              <textarea
+                name="modal-text"
+                id="modal-text"
+                class="modal-text-area"
+                placeholder="Введите текст"
+              ></textarea>
+            </div>
             <button type="submit" class="hero-button">Отправить</button>
           </form>
         </div>
