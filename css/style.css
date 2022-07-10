@@ -81,6 +81,7 @@ img {
 
 .header-logo-blue {
   color: #2196f3;
+  font-family: "Raleway";
 }
 
 .header-item:not(:last-child) {
@@ -579,6 +580,10 @@ img {
   margin-bottom: 20px;
 }
 
+.join {
+  margin-right: 93px;
+}
+
 .footer-soc-list {
   display: flex;
   justify-content: center;
@@ -617,6 +622,31 @@ img {
 
 .footer-soc-icon {
   fill: #ffffff;
+}
+
+.footer-mailing {
+  margin-left: auto;
+}
+
+.footer-form {
+  display: flex;
+}
+
+.footer-input {
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background: #2f303a;
+  padding-left: 16px;
+  background-color: transparent;
+  color: #ffffff;
+  margin-right: 12px;
+}
+
+.footer-input:focus {
+  border-color: var(--accent-color);
 }
 
 /* -----------------------------------MODAL-------------------------------- */
@@ -824,6 +854,16 @@ img {
   border: none;
 } */
 
+.modal-input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  background-color: transparent;
+  padding-left: 42px;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .submit-button {
   min-width: 200px;
   height: 50px;
@@ -834,11 +874,10 @@ img {
   line-height: 1.88;
   display: flex;
   align-items: center;
-  text-align: center;
+  justify-content: center;
   letter-spacing: 0.06em;
   background: #2196f3;
   color: #ffffff;
-  display: block;
   margin: 0 auto;
   border: none;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -846,6 +885,10 @@ img {
   border-radius: 4px;
 }
 
+.send-icon {
+  margin-left: 10px;
+  fill: #ffffff;
+}
 /* -----------------------------PORTFOLIO---------------------------- */
 
 /*-------------------------------Buttons -----------------------------*/
