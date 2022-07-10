@@ -703,6 +703,7 @@ img {
 
 .input-wrap {
   position: relative;
+  display: flex;
 }
 
 .input-icon {
@@ -734,7 +735,8 @@ img {
 }
 
 .modal-text-area {
-  width: 100%;
+  display: block;
+  width: 97%;
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
