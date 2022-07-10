@@ -445,15 +445,20 @@
                 placeholder="Введите текст"
               ></textarea>
             </div>
-            <div class="modal-field">
+            <div class="privacy-field">
               <input
                 type="checkbox"
                 name="privacy"
                 id="privacy"
-                class="input-check"
+                class="input-check hidden"
               />
               <label for="privacy" class="check-text"
-                >Соглашаюсь с рассылкой и принимаю
+                ><span>
+                  <svg class="check-icon" width="16" height="15">
+                    <use href="./images/icons.svg#icon-Vector"></use>
+                  </svg>
+                </span>
+                Соглашаюсь с рассылкой и принимаю&nbsp
                 <a href="">Условия договора</a></label
               >
             </div>

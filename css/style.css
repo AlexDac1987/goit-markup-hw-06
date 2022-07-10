@@ -758,6 +758,13 @@ img {
   border: 1px solid var(--accent-color);
 }
 
+.privacy-field {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
 .check-text {
   font-weight: 400;
   font-size: 14px;
@@ -772,7 +779,33 @@ img {
   color: var(--accent-color);
 }
 
-.check-text::before {
+.check-text span {
+  width: 16px;
+  height: 15px;
+  border: 2px solid #212121;
+  border-radius: 2px;
+  margin-right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.check-icon {
+  fill: transparent;
+}
+
+.input-check:checked + .check-text span {
+  background-color: var(--accent-color);
+  border: none;
+}
+
+.input-check:checked + .check-text .check-icon {
+  fill: #ffffff;
+}
+
+/* ///////////////////////before////////////////////// */
+
+/* .check-text::before {
   content: "";
   width: 16px;
   height: 15px;
@@ -783,7 +816,11 @@ img {
 
 .input-check:checked + .check-text::before {
   background-color: var(--accent-color);
-}
+  background-image: url(../images/Vector.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+} */
 
 .submit-button {
   min-width: 200px;
