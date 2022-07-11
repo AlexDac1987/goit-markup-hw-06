@@ -671,13 +671,14 @@ img {
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   width: 528px;
-  min-height: 581px;
+  height: 581px;
   padding: 40px;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transition: transform 500ms linear;
+  box-sizing: border-box;
 }
 
 .modal-close-btn {
@@ -714,9 +715,11 @@ img {
 .modal-label {
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.67;
   letter-spacing: 0.01em;
   color: #757575;
+  line-height: 14px;
+  display: block;
+  margin-bottom: 4px;
 }
 
 .modal-text {
@@ -730,6 +733,14 @@ img {
 .modal-field {
   margin-bottom: 10px;
 }
+
+.comment-field {
+  margin-bottom: 20px;
+}
+
+/* .modal-field:last-child {
+  margin-bottom: 20px;
+} */
 
 .input-wrap {
   position: relative;
@@ -747,6 +758,7 @@ img {
 .modal-input {
   width: 100%;
   height: 40px;
+  box-sizing: border-box;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   background-color: transparent;
@@ -768,6 +780,7 @@ img {
   display: block;
   width: 97%;
   height: 120px;
+  box-sizing: border-box;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   background-color: transparent;
@@ -828,7 +841,6 @@ img {
 
 .input-check:checked + .check-text span {
   background-color: var(--accent-color);
-  border: none;
 }
 
 .input-check:checked + .check-text .check-icon {
